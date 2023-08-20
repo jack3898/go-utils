@@ -2,7 +2,7 @@ package slice
 
 type SortCallback[Input any] func(Input, Input) int
 
-func SliceSort[Input any](input []Input, sortFn SortCallback[Input]) []Input {
+func Sort[Input any](input []Input, sortFn SortCallback[Input]) []Input {
 	var result []Input
 
 	for _, val := range input {
